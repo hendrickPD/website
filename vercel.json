@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "public": true,
+  "routes": [
+    { "src": "/team", "dest": "/team/index.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
+}
