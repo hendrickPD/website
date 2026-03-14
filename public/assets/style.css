@@ -2507,6 +2507,16 @@ div#mCSB_1_container{
   background-color:#3CB26E !important;
 }
 
+.team-page{
+  display: block;
+}
+
+.team-page-inner{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .team{
  font-size: 13px;
 }
@@ -2514,7 +2524,7 @@ div#mCSB_1_container{
 .team-title{
   font-size: 32px;
   font-weight: 600;
-  color: #ffffff;
+  color: #3CB26E;
   margin: 10px 0 35px 0;
 }
 
