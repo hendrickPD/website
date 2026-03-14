@@ -2389,12 +2389,6 @@ div#mCSB_1_container{
   width: 31%;
 }
 
-.aboutus h2{
-  color: #FFFFFF;
-  font-size: 48px;
-  padding-top: 20px;
-}
-
 .aboutus .aboutus-cont{
   color: #C0C0C0;
   font-size: 17px;
@@ -2402,16 +2396,7 @@ div#mCSB_1_container{
 }
 
 .letstalk {
-  margin-top: 10px;
-}
-
-.letstalk a{
-  text-decoration: underline;
-  color: #C0C0C0;
-}
-
-.letstalk a:hover{
-  color: #3CB26E;
+  margin-top: 20px;
 }
 
 .mainpart {
@@ -2501,10 +2486,6 @@ div#mCSB_1_container{
   border-bottom: 1px solid #565656;
   padding-bottom: 8px;
   padding-top: 8px;
-}
-
-.portfolio-annotation{
-  margin-top: 75px;
 }
 
 .annotation-detail{
@@ -2603,4 +2584,155 @@ div#mCSB_1_container{
   list-style-type: disc;
   margin-left: 50px;
   margin-bottom: 5px;
+}
+
+
+/** portfolio page colors **/
+
+.potfolio-table{
+  font-size: 13px;
+  color: #C0C0C0;
+  margin-top: 35px;
+}
+
+.potfolio-category{
+  font-size: 14px;
+  font-weight: 700;
+  color: #3CB26E;
+  padding: 12px 0 8px 0;
+  border-bottom: 1px solid #565656;
+  margin-bottom: 4px;
+}
+
+.porfolio-cont{
+  display: flex;
+  border-bottom: 1px solid rgba(86, 86, 86, 0.4);
+  padding: 8px 0;
+}
+
+.portfolio-name{
+  width: 12%;
+  min-width: 100px;
+  margin-right: 10px;
+  line-height: 1.25rem;
+}
+
+.portfolio-name a{
+  color: #3CB26E;
+  text-decoration: underline;
+}
+
+.portfolio-name a:hover{
+  color: #2d8a54;
+}
+
+.portfolio-desc{
+  width: 56%;
+  padding-right: 10px;
+  color: #C0C0C0;
+}
+
+.portfolio-industry{
+  width: 18%;
+  color: #9CA4AF;
+}
+
+.portfolio-region{
+  width: 14%;
+  text-align: right;
+  padding-right: 3px;
+  color: #9CA4AF;
+}
+
+.portfolio-annotation{
+  margin-top: 75px;
+}
+
+.portfolio-annotation p{
+  font-size: 11px;
+  color: #A6A6A6;
+  margin-bottom: 10px;
+}
+
+/** letstalk button with color **/
+
+.letstalk a{
+  color: #3CB26E;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.letstalk a:hover{
+  color: #2d8a54;
+}
+
+/** aboutus heading accent **/
+
+.aboutus h2{
+  color: #FFFFFF;
+  font-size: 48px;
+  padding-top: 20px;
+  border-left: 4px solid #3CB26E;
+  padding-left: 16px;
+}
+
+/** footer colors **/
+
+.footer-bottom .inner-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+  border-top: 1px solid #565656;
+}
+
+.footer-offices h3{
+  color: #3CB26E;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer-offices p{
+  color: #9CA4AF;
+  font-size: 14px;
+}
+
+.footer-links ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a{
+  color: #9CA4AF;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover{
+  color: #3CB26E;
+}
+
+.footer-links p{
+  color: #565656;
+  font-size: 13px;
+  text-align: right;
+}
+
+/** header nav active color **/
+
+.header-style-two .main-menu .navigation > li > a{
+  color: #C0C0C0;
+}
+
+.header-style-two .main-menu .navigation > li > a:hover{
+  color: #3CB26E;
+}
+
+.menu-right-content .user .user-name{
+  color: #C0C0C0;
+}
+
+.menu-right-content .user a:hover .user-name{
+  color: #3CB26E;
 }
