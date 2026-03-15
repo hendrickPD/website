@@ -102,19 +102,8 @@
                         </div>
 
                         <div class="safe-calc-section">
-                            <h4>Series A Terms</h4>
-                            <div class="safe-input-group">
-                                <label>Series A Raise</label>
-                                <div class="input-wrapper"><span class="input-prefix">$</span><input type="text" id="seriesARaise" value="5,000,000"></div>
-                            </div>
-                            <div class="safe-input-group">
-                                <label>Series A Pre-Money Valuation</label>
-                                <div class="input-wrapper"><span class="input-prefix">$</span><input type="text" id="seriesAPreMoney" value="20,000,000"></div>
-                            </div>
-                            <div class="safe-input-group">
-                                <label>Option Pool (% of post-money)</label>
-                                <div class="input-wrapper"><input type="text" id="optionPool" value="10"><span class="input-suffix">%</span></div>
-                            </div>
+                            <h4>Series A Assumption</h4>
+                            <p class="safe-calc-assumption">$20M raise at $100M post-money, 10% option pool</p>
                         </div>
                     </div>
 
@@ -232,9 +221,9 @@
         function calculate() {
             const safeAmount = parseNum(document.getElementById('safeAmount').value);
             const valCap = parseNum(document.getElementById('valCap').value);
-            const seriesARaise = parseNum(document.getElementById('seriesARaise').value);
-            const seriesAPreMoney = parseNum(document.getElementById('seriesAPreMoney').value);
-            const optionPoolPct = parseNum(document.getElementById('optionPool').value) / 100;
+            const seriesARaise = 20000000;
+            const seriesAPostMoney = 100000000;
+            const optionPoolPct = 0.10;
 
             if (!valCap || !seriesAPreMoney) {
                 // Clear results when cap is blank
@@ -256,9 +245,6 @@
 
             // Incubator (YC-style: 7% post-money for $500K)
             const incubatorPct = showIncubator ? 0.07 : 0;
-
-            // Series A post-money
-            const seriesAPostMoney = seriesAPreMoney + seriesARaise;
 
             // Series A investor ownership
             const seriesAPct = seriesARaise / seriesAPostMoney;
@@ -347,11 +333,7 @@
                 document.querySelectorAll('.safe-preset-tab').forEach(function(t) {
                     t.classList.remove('active');
                 });
-                if (this.id !== 'optionPool') {
-                    formatInput(this);
-                } else {
-                    calculate();
-                }
+                formatInput(this);
             });
         });
 

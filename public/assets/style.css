@@ -2876,6 +2876,12 @@ div#mCSB_1_container{
   margin-bottom: 30px;
 }
 
+.safe-calc-assumption{
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
 /* Preset tabs */
 .safe-preset-wrapper{
   margin-bottom: 30px;
