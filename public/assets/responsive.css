@@ -249,23 +249,22 @@
     text-align: center;
   }
 
-  .cap-table-header{
-    display: none;
-  }
-
+  .cap-table-header,
   .cap-table-row{
-    flex-direction: column;
-    gap: 4px;
-    padding: 12px 0;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 0 12px;
+    align-items: center;
   }
 
-  .cap-table-row .cap-col-name{
-    font-weight: 600;
+  .cap-table-header{
+    font-size: 11px;
   }
 
-  .cap-table-row .cap-col-pct,
-  .cap-table-row .cap-col-val{
-    text-align: left;
+  .cap-col-pct,
+  .cap-col-val{
+    width: auto;
+    font-size: 13px;
   }
 
   .dilution-legend{
