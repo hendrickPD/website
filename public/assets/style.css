@@ -2861,4 +2861,83 @@ div#mCSB_1_container{
   line-height: 28px;
 }
 
-/* SAFE Calculator */
+/* Contact Form */
+.contact-form-wrapper{
+  margin-top: 50px;
+  max-width: 560px;
+}
+
+.form-row{
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-field{
+  flex: 1;
+}
+
+.form-field{
+  margin-bottom: 20px;
+}
+
+.form-field label{
+  display: block;
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 6px;
+}
+
+.optional-label{
+  color: #6B7280;
+}
+
+.form-field input{
+  width: 100%;
+  background: rgba(42, 45, 47, 0.8);
+  border: 1px solid rgba(69, 179, 110, 0.2);
+  border-radius: 6px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: border-color 300ms ease;
+  box-sizing: border-box;
+}
+
+.form-field input:focus{
+  border-color: #45b36e;
+}
+
+.form-field input::placeholder{
+  color: #4B5563;
+}
+
+.form-submit{
+  background: linear-gradient(135deg, #45b36e, #145e94);
+  border: none;
+  border-radius: 6px;
+  padding: 14px 36px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+  margin-top: 4px;
+}
+
+.form-submit:hover{
+  opacity: 0.85;
+}
+
+.form-submit:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-success{
+  font-size: 16px;
+  color: #45b36e;
+  margin-top: 10px;
+}

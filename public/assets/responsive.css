@@ -238,6 +238,11 @@
     line-height: 1.15;
   }
 
+  .form-row{
+    flex-direction: column;
+    gap: 0;
+  }
+
   .main-footer .footer-top{
     padding: 80px 0px 50px 0px;
   }
