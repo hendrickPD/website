@@ -1760,11 +1760,8 @@ div#mCSB_1_container{
 
 
 .footer-bottom{
-  position: absolute;
+  position: relative;
   padding: 20px 0px;
-  bottom: 10px;
-  right: 45px;
-  text-align: right;
   font-size: 16px;
 }
 
