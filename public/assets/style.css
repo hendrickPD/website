@@ -2680,6 +2680,69 @@ div#mCSB_1_container{
   margin-bottom: 40px;
 }
 
+/* Structure section */
+.structure{
+  margin: 60px 0 50px 0;
+}
+
+.structure-label{
+  font-size: 12px;
+  font-weight: 600;
+  color: #45b36e;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.structure-headline{
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #45b36e;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.structure-sub{
+  font-size: 17px;
+  color: #9CA3AF;
+  margin-bottom: 20px;
+}
+
+.structure-divider{
+  width: 40px;
+  height: 3px;
+  background: #45b36e;
+  margin-bottom: 40px;
+}
+
+.structure-cards{
+  display: flex;
+  gap: 20px;
+}
+
+.structure-card{
+  flex: 1;
+  background: rgba(42, 45, 47, 0.6);
+  border: 1px solid rgba(69, 179, 110, 0.15);
+  border-radius: 8px;
+  padding: 28px 24px;
+}
+
+.structure-card-title{
+  font-size: 13px;
+  font-weight: 600;
+  color: #45b36e;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.structure-card p{
+  font-size: 15px;
+  color: #9CA3AF;
+  line-height: 24px;
+}
+
 .team{
  font-size: 13px;
 }
