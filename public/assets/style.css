@@ -2680,7 +2680,8 @@ div#mCSB_1_container{
 .about-style-two .aboutus:only-child .aboutus-fix {
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
 }
 
 /* Structure section */
@@ -2748,6 +2749,8 @@ div#mCSB_1_container{
 
 .team{
  font-size: 13px;
+ max-width: 1000px;
+ margin: 0 auto;
 }
 
 .team-title{
