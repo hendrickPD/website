@@ -2756,10 +2756,13 @@ div#mCSB_1_container{
 }
 
 .team-title{
-  font-size: 32px;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
   margin: 10px 0 35px 0;
+  background: linear-gradient(135deg, #45b36e, #145e94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .team-list{

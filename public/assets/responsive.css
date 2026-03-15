@@ -232,7 +232,8 @@
 
 @media only screen and (max-width: 767px){
 
-  .work-with-us-headline{
+  .work-with-us-headline,
+  .team-title{
     font-size: 42px;
     line-height: 1.15;
   }
@@ -316,7 +317,8 @@
 
 @media only screen and (max-width: 499px){
 
-  .work-with-us-headline{
+  .work-with-us-headline,
+  .team-title{
     font-size: 32px;
   }
 
