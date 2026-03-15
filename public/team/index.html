@@ -48,6 +48,26 @@
             </div>
         </header>
 
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="/"><img src="/images/logo.svg" alt="logo" title="logo"></a></div>
+                <ul class="navigation clearfix">
+                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                </ul>
+                <div class="social-links">
+                    <div class="user">
+                        <a href="https://app.carta.com/accounts/login/" target="_blank">
+                            <span class="user-name">Investor Login</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
         <section class="about-style-two sec-pad">
             <div class="aboutus">
                 <div class="team">
@@ -82,6 +102,16 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
+            document.body.classList.add('mobile-menu-visible');
+        });
+        document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
+            document.body.classList.remove('mobile-menu-visible');
+        });
+        document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
+            document.body.classList.remove('mobile-menu-visible');
+        });
+    </script>
 </body>
 </html>

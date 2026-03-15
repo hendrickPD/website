@@ -56,7 +56,11 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <nav class="menu-box">
                 <div class="nav-logo"><a href="/"><img src="/images/logo.svg" alt="logo" title="logo"></a></div>
-                <div class="menu-outer"></div>
+                <ul class="navigation clearfix">
+                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><a href="/work-with-us">Work With Us</a></li>
+                </ul>
                 <div class="social-links">
                     <div class="user">
                         <a href="https://app.carta.com/accounts/login/" target="_blank">
@@ -107,6 +111,18 @@
         </footer>
     </div>
 
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
+            document.body.classList.add('mobile-menu-visible');
+        });
+        document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
+            document.body.classList.remove('mobile-menu-visible');
+        });
+        document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
+            document.body.classList.remove('mobile-menu-visible');
+        });
+    </script>
     <script src="/assets/portfolio-data.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <script>
