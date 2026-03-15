@@ -239,35 +239,19 @@
         // Presets
         var presets = {
             'pre-seed': {
-                safeAmount: '250,000',
-                valCap: '5,000,000',
-                seriesARaise: '5,000,000',
-                seriesAPreMoney: '20,000,000',
-                optionPool: '10'
+                safeAmount: '250,000'
             },
             'demo-day': {
-                safeAmount: '1,500,000',
-                valCap: '15,000,000',
-                seriesARaise: '8,000,000',
-                seriesAPreMoney: '30,000,000',
-                optionPool: '10'
+                safeAmount: '500,000'
             },
             'seed': {
-                safeAmount: '3,000,000',
-                valCap: '20,000,000',
-                seriesARaise: '15,000,000',
-                seriesAPreMoney: '50,000,000',
-                optionPool: '10'
+                safeAmount: '1,000,000'
             }
         };
 
         function applyPreset(name) {
             var p = presets[name];
             document.getElementById('safeAmount').value = p.safeAmount;
-            document.getElementById('valCap').value = p.valCap;
-            document.getElementById('seriesARaise').value = p.seriesARaise;
-            document.getElementById('seriesAPreMoney').value = p.seriesAPreMoney;
-            document.getElementById('optionPool').value = p.optionPool;
 
             document.querySelectorAll('.safe-preset-tab').forEach(function(tab) {
                 tab.classList.toggle('active', tab.dataset.preset === name);
