@@ -1,6 +1,7 @@
 {
   "version": 2,
   "public": true,
+  "outputDirectory": "public",
   "routes": [
     { "src": "/team", "dest": "/team/index.html" },
     { "src": "/", "dest": "/index.html" }
