@@ -111,6 +111,36 @@
 
   .porfolio-cont{
     border-bottom: 1px solid rgb(86, 86, 86);
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .portfolio-name{
+    width: 100%;
+    min-width: 0;
+  }
+
+  .portfolio-desc{
+    padding-right: 0;
+  }
+
+  .portfolio-industry,
+  .portfolio-region{
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-footer .footer-bottom .inner-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links{
+    text-align: left;
+  }
+
+  .footer-links ul{
+    justify-content: flex-start;
   }
 
   .Portfolio .tableunderline{
