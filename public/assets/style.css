@@ -2015,7 +2015,7 @@ div#mCSB_1_container{
 }
 
 .main-header .menu-right-content .user span:hover{
-  color: #3CB26E;
+  color: #45b36e;
 }
 
 .main-header .menu-right-content .social-links li:before{
@@ -2393,7 +2393,7 @@ div#mCSB_1_container{
   color: #FFFFFF;
   font-size: 48px;
   padding-top: 20px;
-  background: linear-gradient(135deg, #3CB26E, #145e94);
+  background: linear-gradient(135deg, #45b36e, #145e94);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2412,7 +2412,7 @@ div#mCSB_1_container{
 .letstalk a{
   text-decoration: none;
   color: #1E2022;
-  background: #3CB26E;
+  background: #45b36e;
   padding: 10px 28px;
   border-radius: 4px;
   font-weight: 500;
@@ -2422,7 +2422,7 @@ div#mCSB_1_container{
 }
 
 .letstalk a:hover{
-  background: #34a060;
+  background: #3a9e60;
   color: #FFFFFF;
 }
 
@@ -2490,7 +2490,7 @@ div#mCSB_1_container{
 }
 
 .Portfolio .porfolio-name a{
-  color: #3CB26E;
+  color: #45b36e;
   text-decoration: underline;
 }
 
@@ -2534,7 +2534,7 @@ div#mCSB_1_container{
 .potfolio-category{
   font-size: 13px;
   font-weight: 600;
-  color: #3CB26E;
+  color: #45b36e;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding-bottom: 12px;
@@ -2569,8 +2569,8 @@ div#mCSB_1_container{
 }
 
 .portfolio-name a:hover{
-  color: #3CB26E;
-  border-bottom-color: #3CB26E;
+  color: #45b36e;
+  border-bottom-color: #45b36e;
 }
 
 .portfolio-desc{
@@ -2612,7 +2612,7 @@ div#mCSB_1_container{
 .footer-offices h3{
   font-size: 14px;
   font-weight: 600;
-  color: #3CB26E;
+  color: #45b36e;
   margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
@@ -2642,7 +2642,7 @@ div#mCSB_1_container{
 }
 
 .footer-links ul li a:hover{
-  color: #3CB26E;
+  color: #45b36e;
 }
 
 .footer-links p{
@@ -2666,7 +2666,7 @@ div#mCSB_1_container{
 }
 
 .dowload-bnt:hover{
-  background-color:#3CB26E !important;
+  background-color:#45b36e !important;
 }
 
 .team{
@@ -2711,7 +2711,7 @@ div#mCSB_1_container{
 }
 
 .textcontent a{
-  color: #3CB26E;
+  color: #45b36e;
 }
 
 .content-title{

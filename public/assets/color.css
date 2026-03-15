@@ -333,7 +333,7 @@
 /** home-2 **/
 
 .main-header .menu-right-content .support-box button:before{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 
@@ -341,99 +341,99 @@
 .header-style-two .main-menu .navigation > li:hover > a,
 .header-style-two .menu-right-content .social-links > li:hover > a,
 .header-style-two .menu-right-content .user .user-name > a:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .header-style-two .main-menu .navigation > li > ul > li > a:hover, 
 .header-style-two .main-menu .navigation > li > .megamenu li > a:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .header-style-two .main-menu .navigation > li > ul > li > ul > li > a:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .header-style-two .menu-right-content .search-box-outer:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 
 .home_2 .theme-btn.btn-two{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 .home_2 .theme-btn.btn-two:before{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 .banner-style-two .content-box h6{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .banner-style-two .owl-nav button:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .sec-title .sub-title{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .post-block-one .inner-box .category{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .post-block-one .inner-box h4 a:hover{
-  color: #3CB26E;
+  color: #45b36e;
 }
 
 .home_2 .nav-style-one .owl-nav button:hover{
-  background: #3CB26E;
-  border-color: #3CB26E;
+  background: #45b36e;
+  border-color: #45b36e;
 }
 
 .home_2 .clients-style-two .more-text h5 a:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .clients-style-two .more-text h5 a i{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .subscribe-section .content-box{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 .home_2 .subscribe-section .content-box:before{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 .footer-style-two .contact-widget h5 a:hover{
-  color: #3CB26E;
+  color: #45b36e;
 }
 
 .footer-style-two .contact-widget h5 a:hover{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .footer-style-two .contact-widget h5 a:before{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .scroll-top{
-	background: #3CB26E;
+	background: #45b36e;
 }
 
 .scroll-top{
-	background: #3CB26E;
+	background: #45b36e;
 }	
 
 .footer-style-two .footer-bottom .copyright p a{
-	color: #3CB26E;
+	color: #45b36e;
 }
 
 .home_2 .sidebar-info-contents .content-inner .social-box li a:hover{
-	background: #3CB26E;
-	border-color: #3CB26E;
+	background: #45b36e;
+	border-color: #45b36e;
 }
 
 
@@ -449,7 +449,7 @@
 }
 
 .btn.searchForm-bnt{
-	background-color: #3CB26E;
+	background-color: #45b36e;
 }
 
 .btn.searchForm-bnt input{
@@ -457,13 +457,13 @@
 }
 
 .btn.searchForm-bnt:hover{
-	background-color: #35935c;
+	background-color: #3a9e60;
 }
 
 
 .table-darkblue {
 	--bs-table-color: #fff;
-	--bs-table-bg: #3CB26E;
+	--bs-table-bg: #45b36e;
 	--bs-table-border-color: #0e3f66;
 	--bs-table-striped-bg: #0e3f66;
 	--bs-table-striped-color: #fff;
