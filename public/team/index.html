@@ -103,15 +103,17 @@
         </footer>
     </div>
     <script>
-        document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
-            document.body.classList.add('mobile-menu-visible');
-        });
-        document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
-            document.body.classList.remove('mobile-menu-visible');
-        });
-        document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
-            document.body.classList.remove('mobile-menu-visible');
-        });
+        try {
+            document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
+                document.body.classList.add('mobile-menu-visible');
+            });
+            document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
+                document.body.classList.remove('mobile-menu-visible');
+            });
+            document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
+                document.body.classList.remove('mobile-menu-visible');
+            });
+        } catch(e) {}
     </script>
 </body>
 </html>

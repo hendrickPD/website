@@ -14,6 +14,15 @@
     <link href="/assets/style.css" rel="stylesheet">
     <link href="/assets/responsive.css" rel="stylesheet">
     <style>[v-cloak] { display: none; }</style>
+    <script>
+        // If Vue fails to load, show content after 3 seconds
+        setTimeout(function() {
+            var el = document.querySelector('[v-cloak]');
+            if (el && el.hasAttribute('v-cloak')) {
+                el.removeAttribute('v-cloak');
+            }
+        }, 3000);
+    </script>
 </head>
 <body>
     <div class="boxed_wrapper home_2">
@@ -113,15 +122,17 @@
 
     <script>
         // Mobile menu toggle
-        document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
-            document.body.classList.add('mobile-menu-visible');
-        });
-        document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
-            document.body.classList.remove('mobile-menu-visible');
-        });
-        document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
-            document.body.classList.remove('mobile-menu-visible');
-        });
+        try {
+            document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
+                document.body.classList.add('mobile-menu-visible');
+            });
+            document.querySelector('.mobile-menu .close-btn').addEventListener('click', function() {
+                document.body.classList.remove('mobile-menu-visible');
+            });
+            document.querySelector('.mobile-menu .menu-backdrop').addEventListener('click', function() {
+                document.body.classList.remove('mobile-menu-visible');
+            });
+        } catch(e) {}
     </script>
     <script src="/assets/portfolio-data.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
