@@ -2431,6 +2431,12 @@ div#mCSB_1_container{
   min-height: 2000px;
 }
 
+.about-style-two .mainpart:only-child {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 
 .footer-simple {
   margin: 0 40px 0 40px;

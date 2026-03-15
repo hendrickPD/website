@@ -68,15 +68,7 @@
 
         <!-- about-style-two -->
         <section class="about-style-two sec-pad" id="app" v-cloak>
-            <!-- Left sidebar: About Us (fixed) -->
-            <div class="aboutus">
-                <div class="aboutus-fix">
-                    <h2>About Us</h2>
-                    <p class="aboutus-cont">Palm Drive Capital is a seed-stage venture capital firm. Most investors see the imbalanced founder as a warning sign. We've learned that with the right support, they become generational. We back exceptional founders globally in AI, deep tech, SaaS, fintech, and E-commerce from our teams in New York and San Francisco.</p>
-                </div>
-            </div>
-
-            <!-- Right column: Portfolio companies -->
+            <!-- Portfolio companies -->
             <div class="mainpart">
                 <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
                     <div class="potfolio-category">{{ category.Category }}</div>
