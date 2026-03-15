@@ -2669,6 +2669,17 @@ div#mCSB_1_container{
   background-color:#45b36e !important;
 }
 
+/* Team page: when .aboutus is the only child (no .mainpart), use normal flow */
+.about-style-two .aboutus:only-child {
+  width: 100%;
+}
+
+.about-style-two .aboutus:only-child .aboutus-fix {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 .team{
  font-size: 13px;
 }
