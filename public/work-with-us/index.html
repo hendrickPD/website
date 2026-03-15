@@ -59,6 +59,15 @@
                     <h3 class="safe-calc-title">Post-Money SAFE Dilution Calculator</h3>
                     <p class="safe-calc-desc">See how a post-money SAFE converts at Series A.</p>
 
+                    <div class="safe-preset-wrapper">
+                        <label class="safe-preset-label">Stage</label>
+                        <div class="safe-preset-tabs">
+                            <button class="safe-preset-tab active" data-preset="pre-yc">Pre-YC</button>
+                            <button class="safe-preset-tab" data-preset="post-yc">Post-YC</button>
+                            <button class="safe-preset-tab" data-preset="seed">Seed Round</button>
+                        </div>
+                    </div>
+
                     <div class="safe-calc-inputs">
                         <div class="safe-calc-section">
                             <h4>SAFE Terms</h4>
@@ -227,9 +236,60 @@
             document.getElementById('bar-pool').style.width = (poolPct * 100) + '%';
         }
 
-        // Attach listeners
+        // Presets
+        var presets = {
+            'pre-yc': {
+                safeAmount: '250,000',
+                valCap: '5,000,000',
+                seriesARaise: '5,000,000',
+                seriesAPreMoney: '20,000,000',
+                optionPool: '10'
+            },
+            'post-yc': {
+                safeAmount: '500,000',
+                valCap: '7,143,000',
+                seriesARaise: '5,000,000',
+                seriesAPreMoney: '20,000,000',
+                optionPool: '10'
+            },
+            'seed': {
+                safeAmount: '2,000,000',
+                valCap: '12,000,000',
+                seriesARaise: '10,000,000',
+                seriesAPreMoney: '40,000,000',
+                optionPool: '10'
+            }
+        };
+
+        function applyPreset(name) {
+            var p = presets[name];
+            document.getElementById('safeAmount').value = p.safeAmount;
+            document.getElementById('valCap').value = p.valCap;
+            document.getElementById('seriesARaise').value = p.seriesARaise;
+            document.getElementById('seriesAPreMoney').value = p.seriesAPreMoney;
+            document.getElementById('optionPool').value = p.optionPool;
+
+            document.querySelectorAll('.safe-preset-tab').forEach(function(tab) {
+                tab.classList.toggle('active', tab.dataset.preset === name);
+            });
+
+            calculate();
+        }
+
+        // Preset tab listeners
+        document.querySelectorAll('.safe-preset-tab').forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                applyPreset(this.dataset.preset);
+            });
+        });
+
+        // Input listeners
         document.querySelectorAll('.safe-calc-inputs input').forEach(function(input) {
             input.addEventListener('input', function() {
+                // Deselect preset tabs when user edits
+                document.querySelectorAll('.safe-preset-tab').forEach(function(t) {
+                    t.classList.remove('active');
+                });
                 if (this.id !== 'optionPool') {
                     formatInput(this);
                 } else {
@@ -238,8 +298,8 @@
             });
         });
 
-        // Initial calculation
-        calculate();
+        // Initial calculation with pre-yc preset
+        applyPreset('pre-yc');
     </script>
 </body>
 </html>

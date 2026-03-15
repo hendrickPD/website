@@ -2876,6 +2876,49 @@ div#mCSB_1_container{
   margin-bottom: 30px;
 }
 
+/* Preset tabs */
+.safe-preset-wrapper{
+  margin-bottom: 30px;
+}
+
+.safe-preset-label{
+  font-size: 12px;
+  font-weight: 600;
+  color: #9CA3AF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.safe-preset-tabs{
+  display: flex;
+  gap: 8px;
+}
+
+.safe-preset-tab{
+  background: rgba(42, 45, 47, 0.6);
+  border: 1px solid rgba(69, 179, 110, 0.15);
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #9CA3AF;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.safe-preset-tab:hover{
+  border-color: rgba(69, 179, 110, 0.4);
+  color: #ffffff;
+}
+
+.safe-preset-tab.active{
+  background: rgba(69, 179, 110, 0.15);
+  border-color: #45b36e;
+  color: #45b36e;
+}
+
 .safe-calc-inputs{
   display: flex;
   gap: 40px;
