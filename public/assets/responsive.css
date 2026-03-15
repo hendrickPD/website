@@ -232,50 +232,6 @@
 
 @media only screen and (max-width: 767px){
 
-  .safe-calc-inputs{
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .safe-preset-tabs{
-    flex-wrap: wrap;
-  }
-
-  .safe-preset-tab{
-    flex: 1;
-    min-width: 0;
-    padding: 10px 12px;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .cap-table-header,
-  .cap-table-row{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    gap: 0 12px;
-    align-items: center;
-  }
-
-  .cap-table-header{
-    font-size: 11px;
-  }
-
-  .cap-col-pct,
-  .cap-col-val{
-    width: auto;
-    font-size: 13px;
-  }
-
-  .dilution-legend{
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .safe-calculator{
-    padding: 25px 20px;
-  }
-
   .work-with-us-headline{
     font-size: 42px;
     line-height: 1.15;
@@ -362,10 +318,6 @@
 
   .work-with-us-headline{
     font-size: 32px;
-  }
-
-  .safe-calc-title{
-    font-size: 18px;
   }
 
   .mobile-menu{
