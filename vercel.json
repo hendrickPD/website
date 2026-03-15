@@ -4,6 +4,7 @@
   "outputDirectory": "public",
   "routes": [
     { "src": "/team", "dest": "/team/index.html" },
+    { "src": "/work-with-us", "dest": "/work-with-us/index.html" },
     { "src": "/", "dest": "/index.html" }
   ]
 }

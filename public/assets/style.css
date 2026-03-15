@@ -2829,3 +2829,201 @@ div#mCSB_1_container{
   margin-left: 50px;
   margin-bottom: 5px;
 }
+
+/* Work With Us page */
+.work-with-us-content{
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.work-with-us-intro{
+  margin-bottom: 60px;
+}
+
+.work-with-us-headline{
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #45b36e, #145e94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.work-with-us-desc{
+  font-size: 17px;
+  color: #C0C0C0;
+  line-height: 28px;
+}
+
+/* SAFE Calculator */
+.safe-calculator{
+  margin-bottom: 60px;
+}
+
+.safe-calc-title{
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.safe-calc-desc{
+  font-size: 15px;
+  color: #9CA3AF;
+  margin-bottom: 30px;
+}
+
+.safe-calc-inputs{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.safe-calc-section{
+  flex: 1;
+}
+
+.safe-calc-section h4{
+  font-size: 12px;
+  font-weight: 600;
+  color: #45b36e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.safe-input-group{
+  margin-bottom: 16px;
+}
+
+.safe-input-group label{
+  display: block;
+  font-size: 13px;
+  color: #9CA3AF;
+  margin-bottom: 6px;
+}
+
+.input-wrapper{
+  display: flex;
+  align-items: center;
+  background: rgba(42, 45, 47, 0.8);
+  border: 1px solid rgba(69, 179, 110, 0.2);
+  border-radius: 6px;
+  padding: 0 12px;
+  transition: border-color 300ms ease;
+}
+
+.input-wrapper:focus-within{
+  border-color: #45b36e;
+}
+
+.input-prefix, .input-suffix{
+  font-size: 15px;
+  color: #6B7280;
+}
+
+.input-wrapper input{
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 8px;
+  width: 100%;
+}
+
+/* Cap table */
+.safe-calc-results h4{
+  font-size: 12px;
+  font-weight: 600;
+  color: #45b36e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cap-table{
+  margin-bottom: 24px;
+}
+
+.cap-table-header{
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #2A2D2F;
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cap-table-row{
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(42, 45, 47, 0.5);
+  font-size: 15px;
+}
+
+.cap-table-total{
+  border-top: 1px solid #45b36e;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.cap-col-name{
+  flex: 1;
+  color: #ffffff;
+}
+
+.cap-col-pct{
+  width: 120px;
+  text-align: right;
+  color: #C0C0C0;
+}
+
+.cap-col-val{
+  width: 160px;
+  text-align: right;
+  color: #9CA3AF;
+}
+
+/* Dilution bar */
+.dilution-bar{
+  display: flex;
+  height: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.dilution-segment{
+  transition: width 400ms ease;
+}
+
+#bar-founders{ background: #45b36e; }
+#bar-safe{ background: #2d8a4e; }
+#bar-seriesA{ background: #145e94; }
+#bar-pool{ background: #4B5563; }
+
+.dilution-legend{
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #9CA3AF;
+}
+
+.legend-item{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
