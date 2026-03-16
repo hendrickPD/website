@@ -95,14 +95,12 @@
             <!-- Portfolio companies -->
             <div class="mainpart">
                 <h1 class="portfolio-title">Our Companies</h1>
-                <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
-                    <div class="potfolio-category">{{ category.Category }}</div>
-                    <div class="porfolio-cont" v-for="item in category.Item" :key="item.Title">
+                <div class="potfolio-table">
+                    <div class="porfolio-cont" v-for="item in allCompanies" :key="item.Title">
                         <div class="portfolio-name">
                             <a :href="normalizeUrl(item.Url)" target="_blank" rel="noopener">{{ item.Title }}</a>
                         </div>
                         <div class="portfolio-desc">{{ item.Desc }}</div>
-                        <div class="portfolio-industry">{{ joinValues(item.Industry) }}</div>
                     </div>
                 </div>
 
@@ -154,10 +152,12 @@
                     portfolioData: PORTFOLIO_DATA.items
                 }
             },
+            computed: {
+                allCompanies() {
+                    return this.portfolioData.flatMap(category => category.Item);
+                }
+            },
             methods: {
-                joinValues(arr) {
-                    return arr.map(item => item.Value).join(' & ');
-                },
                 normalizeUrl(url) {
                     if (!url || url === 'javascript:;') return '#';
                     if (url.startsWith('http')) return url;
