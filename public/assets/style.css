@@ -2965,11 +2965,12 @@ div#mCSB_1_container{
 }
 
 .testimonials-heading{
-  font-size: 24px;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  color: #9CA3AF;
   margin-bottom: 32px;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .testimonials-grid{
@@ -3005,7 +3006,7 @@ div#mCSB_1_container{
 }
 
 .testimonial-name{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   margin: 0;
