@@ -2918,6 +2918,7 @@ ul.work-with-us-desc{
 }
 
 ul.work-with-us-desc li{
+  list-style: disc;
   margin-bottom: 4px;
 }
 
