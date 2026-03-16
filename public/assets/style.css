@@ -2776,7 +2776,7 @@ div#mCSB_1_container{
   font-weight: 600;
   color: #FFFFFF;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .home-tagline{
@@ -2793,7 +2793,7 @@ div#mCSB_1_container{
 
 .team-intro{
   max-width: 1000px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 40px auto;
 }
 .team-intro-text{
   font-size: 17px;
@@ -2813,7 +2813,7 @@ div#mCSB_1_container{
 .portfolio-title{
   font-size: 28px;
   font-weight: 600;
-  margin: 10px 0 35px 0;
+  margin: 0 0 20px 0;
   color: #FFFFFF;
 }
 
@@ -2899,19 +2899,20 @@ div#mCSB_1_container{
 }
 
 .work-with-us-intro{
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .work-with-us-headline{
   font-size: 28px;
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 0;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
 
 .work-with-us-desc{
   font-size: 17px;
+  font-weight: 400;
   color: #D1D5DB;
   line-height: 28px;
   margin-bottom: 16px;
