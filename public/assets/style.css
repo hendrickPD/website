@@ -358,7 +358,7 @@ img {
 }
 
 .sec-pad{
-  padding: 190px 50px 100px 70px;
+  padding: 190px 70px 100px 70px;
 }
 
 .mr-0{
@@ -2688,8 +2688,8 @@ div#mCSB_1_container{
 
 /* Team page: when .aboutus is the only child (no .mainpart), use normal flow */
 .about-style-two:has(.aboutus:only-child) {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .about-style-two .aboutus:only-child {
@@ -2767,7 +2767,7 @@ div#mCSB_1_container{
 }
 
 .home-hero{
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 80px auto;
   text-align: left;
 }
