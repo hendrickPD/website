@@ -2926,25 +2926,12 @@ ul.work-with-us-desc li{
   margin-bottom: 4px;
 }
 
-.form-cta-button{
-  display: inline-block;
-  margin-top: 24px;
-  padding: 12px 28px;
-  font-size: 15px;
+.form-heading{
+  font-size: 22px;
   font-weight: 600;
   font-family: 'poppins', sans-serif;
-  color: #FFFFFF;
-  background: #45b36e;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.form-cta-button:hover{
-  background: #3a9e60;
-  color: #FFFFFF;
+  color: #222;
+  margin-bottom: 24px;
 }
 
 /* Contact Form */
