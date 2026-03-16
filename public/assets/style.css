@@ -2767,8 +2767,9 @@ div#mCSB_1_container{
 }
 
 .home-hero{
-  max-width: 1000px;
-  margin: 0 auto 60px auto;
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+  text-align: center;
 }
 
 .home-headline{
@@ -2776,6 +2777,14 @@ div#mCSB_1_container{
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.home-tagline{
+  font-size: 20px;
+  font-weight: 300;
+  color: #9CA3AF;
+  line-height: 1.7;
 }
 
 .team-intro{
