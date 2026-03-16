@@ -2768,7 +2768,7 @@ div#mCSB_1_container{
 
 .home-hero{
   max-width: 800px;
-  margin: 0 auto 80px auto;
+  margin: 0 0 80px 0;
   text-align: left;
 }
 
@@ -2996,7 +2996,7 @@ div#mCSB_1_container{
 
 .testimonials-container{
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .testimonials-heading{
