@@ -2926,6 +2926,27 @@ ul.work-with-us-desc li{
   margin-bottom: 4px;
 }
 
+.form-cta-button{
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'poppins', sans-serif;
+  color: #FFFFFF;
+  background: #45b36e;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-cta-button:hover{
+  background: #3a9e60;
+  color: #FFFFFF;
+}
+
 /* Contact Form */
 .contact-form-wrapper{
   margin-top: 50px;
@@ -2979,21 +3000,21 @@ ul.work-with-us-desc li{
 }
 
 .form-submit{
-  background: linear-gradient(135deg, #45b36e, #145e94);
+  background: #45b36e;
   border: none;
   border-radius: 6px;
-  padding: 14px 36px;
+  padding: 12px 28px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: opacity 300ms ease;
+  transition: background 0.2s;
   margin-top: 4px;
 }
 
 .form-submit:hover{
-  opacity: 0.85;
+  background: #3a9e60;
 }
 
 .form-submit:disabled{
