@@ -2804,7 +2804,8 @@ div#mCSB_1_container{
  margin: 0 auto;
 }
 
-.team-title{
+.team-title,
+.portfolio-title{
   font-size: 28px;
   font-weight: 600;
   margin: 10px 0 35px 0;
@@ -2822,6 +2823,8 @@ div#mCSB_1_container{
   flex-shrink: 0;
   padding-bottom: 5px;
   padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .team-position{
@@ -2830,6 +2833,7 @@ div#mCSB_1_container{
   flex: 1;
   padding-bottom: 5px;
   padding-left: 15px;
+  font-size: 14px;
 }
 
 .textcontent{
