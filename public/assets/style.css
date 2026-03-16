@@ -2964,6 +2964,13 @@ div#mCSB_1_container{
   margin: 0 auto;
 }
 
+.testimonials-heading{
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
 .testimonials-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2971,18 +2978,15 @@ div#mCSB_1_container{
 }
 
 .testimonial-card{
-  background: #2a2d2f;
-  border-radius: 12px;
-  padding: 36px 28px 32px;
+  padding: 0;
   text-align: center;
 }
 
 .testimonial-avatar{
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
   border-radius: 50%;
-  border: 2px solid #45b36e;
   overflow: hidden;
 }
 
@@ -2993,16 +2997,16 @@ div#mCSB_1_container{
 }
 
 .testimonial-name{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 2px;
 }
 
 .testimonial-title{
-  font-size: 14px;
+  font-size: 13px;
   color: #9CA3AF;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .testimonial-quote{
@@ -3010,8 +3014,8 @@ div#mCSB_1_container{
   font-size: 14px;
   line-height: 22px;
   color: #C0C0C0;
-  border-left: 3px solid #45b36e;
-  padding-left: 16px;
+  border-left: 2px solid #45b36e;
+  padding-left: 14px;
   margin: 0;
   font-style: normal;
 }
