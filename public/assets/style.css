@@ -2956,13 +2956,12 @@ div#mCSB_1_container{
 
 /* Testimonials */
 .testimonials-section{
-  padding: 40px 0 100px;
+  padding: 0 0 80px;
 }
 
 .testimonials-container{
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .testimonials-grid{
