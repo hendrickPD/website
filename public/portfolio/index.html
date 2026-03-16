@@ -92,9 +92,9 @@
 
         <!-- about-style-two -->
         <section class="about-style-two sec-pad" id="app" v-cloak>
-            <h1 class="sr-only">Palm Drive Capital Portfolio</h1>
             <!-- Portfolio companies -->
             <div class="mainpart">
+                <h1 class="sr-only">Palm Drive Capital Portfolio</h1>
                 <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
                     <div class="potfolio-category">{{ category.Category }}</div>
                     <div class="porfolio-cont" v-for="item in category.Item" :key="item.Title">
