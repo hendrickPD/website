@@ -95,8 +95,9 @@
             <!-- Portfolio companies -->
             <div class="mainpart">
                 <h1 class="portfolio-title">Our Companies</h1>
-                <div class="potfolio-table">
-                    <div class="porfolio-cont" v-for="item in allCompanies" :key="item.Title">
+                <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
+                    <div class="potfolio-category">{{ category.Category }}</div>
+                    <div class="porfolio-cont" v-for="item in category.Item" :key="item.Title">
                         <div class="portfolio-name">
                             <a :href="normalizeUrl(item.Url)" target="_blank" rel="noopener">{{ item.Title }}</a>
                         </div>
@@ -150,11 +151,6 @@
             data() {
                 return {
                     portfolioData: PORTFOLIO_DATA.items
-                }
-            },
-            computed: {
-                allCompanies() {
-                    return this.portfolioData.flatMap(category => category.Item);
                 }
             },
             methods: {
