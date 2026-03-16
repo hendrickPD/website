@@ -2911,6 +2911,16 @@ div#mCSB_1_container{
   line-height: 28px;
 }
 
+ul.work-with-us-desc{
+  list-style: disc;
+  padding-left: 24px;
+  margin: 12px 0;
+}
+
+ul.work-with-us-desc li{
+  margin-bottom: 4px;
+}
+
 /* Contact Form */
 .contact-form-wrapper{
   margin-top: 50px;
