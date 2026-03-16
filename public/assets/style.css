@@ -2766,13 +2766,13 @@ div#mCSB_1_container{
 }
 
 .home-hero{
-  max-width: 1000px;
-  margin: 0 auto 40px auto;
+  max-width: 680px;
+  margin: 0 auto 60px auto;
   text-align: left;
 }
 
 .home-headline{
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
   color: #FFFFFF;
   line-height: 1.2;
@@ -2787,9 +2787,6 @@ div#mCSB_1_container{
   margin-bottom: 16px;
 }
 
-.home-tagline-secondary{
-  margin-top: 24px;
-}
 
 .team-intro{
   max-width: 1000px;
@@ -3048,8 +3045,8 @@ ul.work-with-us-desc li{
 }
 
 .testimonial-avatar{
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
