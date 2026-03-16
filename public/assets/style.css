@@ -2766,6 +2766,18 @@ div#mCSB_1_container{
   line-height: 24px;
 }
 
+.home-hero{
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+}
+
+.home-headline{
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
 .team-intro{
   max-width: 1000px;
   margin: 0 auto 50px auto;
