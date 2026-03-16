@@ -2783,7 +2783,7 @@ div#mCSB_1_container{
 .home-tagline{
   font-size: 20px;
   font-weight: 300;
-  color: #9CA3AF;
+  color: #D1D5DB;
   line-height: 1.7;
 }
 
@@ -3006,13 +3006,10 @@ div#mCSB_1_container{
 }
 
 .testimonials-heading{
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 32px;
-  background: linear-gradient(135deg, #45b36e, #145e94);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
 }
 
 .testimonials-grid{
@@ -3057,7 +3054,7 @@ div#mCSB_1_container{
 
 .testimonial-title{
   font-size: 13px;
-  color: #9CA3AF;
+  color: #D1D5DB;
   margin: 0;
   line-height: 1.3;
 }
