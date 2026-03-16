@@ -2784,6 +2784,11 @@ div#mCSB_1_container{
   font-weight: 400;
   color: #D1D5DB;
   line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.home-tagline-secondary{
+  margin-top: 24px;
 }
 
 .team-intro{
