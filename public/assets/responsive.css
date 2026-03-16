@@ -175,6 +175,10 @@
 
 @media only screen and (max-width: 991px){
 
+  .testimonials-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .main-footer .logo-widget{
     margin-top: 0px;
     margin-bottom: 20px;
@@ -241,6 +245,11 @@
   .form-row{
     flex-direction: column;
     gap: 0;
+  }
+
+  .testimonials-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .main-footer .footer-top{
