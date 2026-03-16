@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="title" content="Home | Palm Drive Capital">
+    <meta name="title" content="Palm Drive Capital">
     <meta name="description" content="Palm Drive Capital is a venture capital firm backing generational founders at pre-seed and seed. $250K–$1M checks. New York and San Francisco.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Palm Drive Capital">
@@ -14,7 +14,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Palm Drive Capital">
     <meta name="twitter:description" content="Venture capital firm backing generational founders at pre-seed and seed. $250K–$1M checks. New York and San Francisco.">
-    <title>Home | Palm Drive Capital</title>
+    <title>Palm Drive Capital</title>
     <link rel="canonical" href="https://palmdrive.vc/">
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
@@ -23,20 +23,9 @@
     <link href="/assets/color.css" rel="stylesheet">
     <link href="/assets/style.css" rel="stylesheet">
     <link href="/assets/responsive.css" rel="stylesheet">
-    <style>[v-cloak] { display: none; }</style>
-    <script>
-        // If Vue fails to load, show content after 3 seconds
-        setTimeout(function() {
-            var el = document.querySelector('[v-cloak]');
-            if (el && el.hasAttribute('v-cloak')) {
-                el.removeAttribute('v-cloak');
-            }
-        }, 3000);
-    </script>
 </head>
 <body>
     <div class="boxed_wrapper home_2">
-        <!-- main header -->
         <header class="main-header header-style-two">
             <div class="header-lower">
                 <div class="outer-container">
@@ -51,7 +40,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li><a href="/">Portfolio</a></li>
+                                        <li><a href="/portfolio">Portfolio</a></li>
                                         <li><a href="/team">About Us</a></li>
                                         <li><a href="/work-with-us">Work With Us</a></li>
                                     </ul>
@@ -76,7 +65,7 @@
             <nav class="menu-box">
                 <div class="nav-logo"><a href="/"><img src="/images/logo.svg" alt="logo" title="logo"></a></div>
                 <ul class="navigation clearfix">
-                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
                     <li><a href="/team">About Us</a></li>
                     <li><a href="/work-with-us">Work With Us</a></li>
                 </ul>
@@ -90,22 +79,45 @@
             </nav>
         </div>
 
-        <!-- about-style-two -->
-        <section class="about-style-two sec-pad" id="app" v-cloak>
-            <h1 class="sr-only">Palm Drive Capital Portfolio</h1>
-            <!-- Portfolio companies -->
-            <div class="mainpart">
-                <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
-                    <div class="potfolio-category">{{ category.Category }}</div>
-                    <div class="porfolio-cont" v-for="item in category.Item" :key="item.Title">
-                        <div class="portfolio-name">
-                            <a :href="normalizeUrl(item.Url)" target="_blank" rel="noopener">{{ item.Title }}</a>
+        <section class="about-style-two sec-pad">
+            <div class="aboutus">
+                <div class="testimonials-section">
+                    <div class="testimonials-container">
+                        <h3 class="testimonials-heading">What Founders Say</h3>
+                        <div class="testimonials-grid">
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img class="testimonial-avatar" src="/images/headshots/sam-bhagwat.jpg" alt="Sam Bhagwat">
+                                    <div class="testimonial-info">
+                                        <h4 class="testimonial-name">Sam Bhagwat</h4>
+                                        <p class="testimonial-title">CEO, Mastra</p>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">&ldquo;I&rsquo;ve known Hendrick and Seamon for years, and they were among the first people I called when I started Mastra. When it came time to double down, they moved quickly and with conviction. That kind of trust and alignment is rare in venture.&rdquo;</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img class="testimonial-avatar" src="/images/headshots/alaxic-smith.jpg" alt="Alaxic Smith">
+                                    <div class="testimonial-info">
+                                        <h4 class="testimonial-name">Alaxic Smith</h4>
+                                        <p class="testimonial-title">CEO, Frame</p>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">&ldquo;Palm Drive acted decisively, investing in Frame based on their strong independent conviction. Since then, they&rsquo;ve been instrumental in our go-to-market efforts, consistently providing valuable customer introductions and connecting us with top talent for open roles.&rdquo;</p>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img class="testimonial-avatar" src="/images/headshots/ladi-delano.jpg" alt="Ladi Delano">
+                                    <div class="testimonial-info">
+                                        <h4 class="testimonial-name">Ladi Delano</h4>
+                                        <p class="testimonial-title">CEO, Moove</p>
+                                    </div>
+                                </div>
+                                <p class="testimonial-quote">&ldquo;Palm Drive backed us early and moved with real conviction. They&rsquo;re the kind of partners every founder hopes to have in their corner &ndash; they lean in, move fast, and genuinely help without the ego.&rdquo;</p>
+                            </div>
                         </div>
-                        <div class="portfolio-desc">{{ item.Desc }}</div>
-                        <div class="portfolio-industry">{{ joinValues(item.Industry) }}</div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -130,9 +142,7 @@
             </div>
         </footer>
     </div>
-
     <script>
-        // Mobile menu toggle
         try {
             document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
                 document.body.classList.add('mobile-menu-visible');
@@ -144,27 +154,6 @@
                 document.body.classList.remove('mobile-menu-visible');
             });
         } catch(e) {}
-    </script>
-    <script src="/assets/portfolio-data.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-    <script>
-        Vue.createApp({
-            data() {
-                return {
-                    portfolioData: PORTFOLIO_DATA.items
-                }
-            },
-            methods: {
-                joinValues(arr) {
-                    return arr.map(item => item.Value).join(' & ');
-                },
-                normalizeUrl(url) {
-                    if (!url || url === 'javascript:;') return '#';
-                    if (url.startsWith('http')) return url;
-                    return 'https://' + url;
-                }
-            }
-        }).mount('#app');
     </script>
 </body>
 </html>
