@@ -2761,6 +2761,18 @@ div#mCSB_1_container{
   line-height: 24px;
 }
 
+.team-intro{
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+.team-intro-text{
+  font-size: 22px;
+  font-weight: 300;
+  color: #9CA3AF;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
 .team{
  font-size: 13px;
  max-width: 1000px;
@@ -2965,12 +2977,14 @@ div#mCSB_1_container{
 }
 
 .testimonials-heading{
-  font-size: 20px;
-  font-weight: 400;
-  color: #9CA3AF;
+  font-size: 48px;
+  font-weight: 700;
   margin-bottom: 32px;
   text-align: center;
-  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #45b36e, #145e94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .testimonials-grid{
