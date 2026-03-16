@@ -2612,13 +2612,12 @@ div#mCSB_1_container{
 /* Footer styles */
 .main-footer .footer-bottom{
   border-top: 1px solid #2A2D2F;
-  padding: 40px 0;
+  padding: 40px 70px;
 }
 
 .main-footer .footer-bottom .inner-container{
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .footer-disclaimer p{
