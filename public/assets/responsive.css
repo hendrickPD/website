@@ -176,7 +176,7 @@
 @media only screen and (max-width: 991px){
 
   .testimonials-grid{
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .main-footer .logo-widget{
@@ -249,7 +249,7 @@
   }
 
   .testimonials-grid{
-    columns: 1;
+    grid-template-columns: 1fr;
   }
 
   .main-footer .footer-top{
