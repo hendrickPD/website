@@ -2796,7 +2796,8 @@ div#mCSB_1_container{
 
 .team-name{
   border-bottom: 1px solid #565656;
-  width: 35%;
+  width: 250px;
+  flex-shrink: 0;
   padding-bottom: 5px;
   padding-left: 5px;
 }
@@ -2804,7 +2805,9 @@ div#mCSB_1_container{
 .team-position{
   border-bottom: 1px solid #565656;
   color: #C0C0C0;
-  width: 100%;
+  flex: 1;
+  padding-bottom: 5px;
+  padding-left: 15px;
 }
 
 .textcontent{
