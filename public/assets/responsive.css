@@ -176,7 +176,7 @@
 @media only screen and (max-width: 991px){
 
   .testimonials-grid{
-    grid-template-columns: 1fr 1fr;
+    columns: 2;
   }
 
   .main-footer .logo-widget{
@@ -249,8 +249,7 @@
   }
 
   .testimonials-grid{
-    grid-template-columns: 1fr;
-    gap: 20px;
+    columns: 1;
   }
 
   .main-footer .footer-top{

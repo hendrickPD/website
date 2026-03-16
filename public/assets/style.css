@@ -3041,9 +3041,8 @@ ul.work-with-us-desc li{
 }
 
 .testimonials-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  columns: 3;
+  column-gap: 28px;
 }
 
 .testimonial-card{
@@ -3051,8 +3050,8 @@ ul.work-with-us-desc li{
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 28px;
-  display: flex;
-  flex-direction: column;
+  break-inside: avoid;
+  margin-bottom: 28px;
 }
 
 .testimonial-quote{
@@ -3061,7 +3060,6 @@ ul.work-with-us-desc li{
   color: #D1D5DB;
   margin: 0 0 20px 0;
   font-style: normal;
-  flex-grow: 1;
 }
 
 .testimonial-attribution{
