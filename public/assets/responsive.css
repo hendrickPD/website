@@ -175,6 +175,10 @@
 
 @media only screen and (max-width: 991px){
 
+  .testimonials-grid{
+    columns: 2;
+  }
+
   .main-footer .logo-widget{
     margin-top: 0px;
     margin-bottom: 20px;
@@ -232,6 +236,22 @@
 
 @media only screen and (max-width: 767px){
 
+  .work-with-us-headline,
+  .team-title,
+  .testimonials-heading{
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .form-row{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .testimonials-grid{
+    columns: 1;
+  }
+
   .main-footer .footer-top{
     padding: 80px 0px 50px 0px;
   }
@@ -281,6 +301,10 @@
     padding: 190px 20px 100px 20px;
   }
 
+  .main-footer .footer-bottom{
+    padding: 40px 20px;
+  }
+
 }
 
 
@@ -310,6 +334,12 @@
 
 
 @media only screen and (max-width: 499px){
+
+  .work-with-us-headline,
+  .team-title,
+  .testimonials-heading{
+    font-size: 32px;
+  }
 
   .mobile-menu{
     width: 100%;
@@ -358,7 +388,7 @@
     width: 100%;
   }
   .team-name{
-    width: 60%;
+    width: 150px;
   }
 }
 
