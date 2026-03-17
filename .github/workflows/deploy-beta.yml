@@ -1,8 +1,8 @@
 name: Deploy Beta to beta.palmdrive.vc
 
 on:
-  pull_request:
-    branches: [master]
+  push:
+    branches: ['claude/**']
 
 permissions:
   contents: read
