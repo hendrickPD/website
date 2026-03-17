@@ -1,8 +1,8 @@
 name: Deploy Beta to beta.palmdrive.vc
 
 on:
-  push:
-    branches: [beta]
+  pull_request:
+    branches: [master]
 
 permissions:
   contents: read
@@ -11,7 +11,7 @@ jobs:
   deploy-beta:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout PR branch
         uses: actions/checkout@v4
 
       - name: Set beta CNAME
