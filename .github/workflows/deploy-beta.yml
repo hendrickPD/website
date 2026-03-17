@@ -1,0 +1,26 @@
+name: Deploy Beta to beta.palmdrive.vc
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-beta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Set beta CNAME
+        run: echo "beta.palmdrive.vc" > public/CNAME
+
+      - name: Deploy to beta repo
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.BETA_DEPLOY_KEY }}
+          external_repository: hendrickPD/website-beta
+          publish_dir: ./public
+          publish_branch: main

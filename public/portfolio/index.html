@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="About Palm Drive Capital. Meet the team and hear from founders we've backed. New York and San Francisco.">
+    <meta name="title" content="Portfolio | Palm Drive Capital">
+    <meta name="description" content="Palm Drive Capital portfolio. Companies we've backed at pre-seed and seed.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="About Us | Palm Drive Capital">
-    <meta property="og:description" content="About Palm Drive Capital. Meet the team and hear from founders we've backed.">
-    <meta property="og:url" content="https://palmdrive.vc/team">
+    <meta property="og:title" content="Portfolio | Palm Drive Capital">
+    <meta property="og:description" content="Palm Drive Capital portfolio. Companies we've backed at pre-seed and seed.">
+    <meta property="og:url" content="https://palmdrive.vc/portfolio">
     <meta property="og:image" content="https://palmdrive.vc/images/og-image.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="About Us | Palm Drive Capital">
-    <meta name="twitter:description" content="About Palm Drive Capital. Meet the team and hear from founders we've backed.">
-    <title>About Us | Palm Drive Capital</title>
-    <link rel="canonical" href="https://palmdrive.vc/team">
+    <meta name="twitter:title" content="Portfolio | Palm Drive Capital">
+    <meta name="twitter:description" content="Palm Drive Capital portfolio. Companies we've backed at pre-seed and seed.">
+    <title>Portfolio | Palm Drive Capital</title>
+    <link rel="canonical" href="https://palmdrive.vc/portfolio">
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link href="/assets/flaticon.css" rel="stylesheet">
@@ -22,9 +23,20 @@
     <link href="/assets/color.css" rel="stylesheet">
     <link href="/assets/style.css" rel="stylesheet">
     <link href="/assets/responsive.css" rel="stylesheet">
+    <style>[v-cloak] { display: none; }</style>
+    <script>
+        // If Vue fails to load, show content after 3 seconds
+        setTimeout(function() {
+            var el = document.querySelector('[v-cloak]');
+            if (el && el.hasAttribute('v-cloak')) {
+                el.removeAttribute('v-cloak');
+            }
+        }, 3000);
+    </script>
 </head>
 <body style="background:#1E2022">
     <div class="boxed_wrapper home_2">
+        <!-- main header -->
         <header class="main-header header-style-two">
             <div class="header-lower">
                 <div class="outer-container">
@@ -78,26 +90,21 @@
             </nav>
         </div>
 
-        <section class="about-style-two sec-pad">
-            <div class="aboutus">
-                <div class="team-intro">
-                    <h3 class="team-title">The Palm Drive Team</h3>
-                    <p class="team-intro-text">We invest with conviction.</p>
-                    <p class="team-intro-text">We do not always agree. But when we back a founder, the whole team shows up. You work with the entire firm.</p>
-                    <p class="team-intro-text">Palm Drive is a small partnership by design. We stay close to the founders we back and help through the messy parts of building companies.</p>
+        <!-- about-style-two -->
+        <section class="about-style-two sec-pad" id="app" v-cloak>
+            <!-- Portfolio companies -->
+            <div class="mainpart">
+                <h1 class="portfolio-title">Our Companies</h1>
+                <div class="potfolio-table" v-for="category in portfolioData" :key="category.Category">
+                    <div class="potfolio-category">{{ category.Category }}</div>
+                    <div class="porfolio-cont" v-for="item in category.Item" :key="item.Title">
+                        <div class="portfolio-name">
+                            <a :href="normalizeUrl(item.Url)" target="_blank" rel="noopener">{{ item.Title }}</a>
+                        </div>
+                        <div class="portfolio-desc">{{ item.Desc }}</div>
+                    </div>
                 </div>
-                <div class="team">
-                    <h3 class="team-title">The Partnership</h3>
-                    <div class="team-list"><div class="team-name">Catherine Cai</div><div class="team-position">Investment &amp; Operations</div></div>
-                    <div class="team-list"><div class="team-name">Dorie Chang</div><div class="team-position">Operations</div></div>
-                    <div class="team-list"><div class="team-name">Seamon Chan</div><div class="team-position">Investment</div></div>
-                    <div class="team-list"><div class="team-name">Abbey DeRossi</div><div class="team-position">Operations</div></div>
-                    <div class="team-list"><div class="team-name">Nick Hsu</div><div class="team-position">Investment</div></div>
-                    <div class="team-list"><div class="team-name">Hendrick Lee</div><div class="team-position">Investment</div></div>
-                    <div class="team-list"><div class="team-name">Tuvana Soronzonbold</div><div class="team-position">Investment</div></div>
-                    <div class="team-list"><div class="team-name">Capri Wheaton</div><div class="team-position">Investment</div></div>
-                    <div class="team-list"><div class="team-name">Henry Woram</div><div class="team-position">Investment</div></div>
-                </div>
+
             </div>
         </section>
 
@@ -122,7 +129,9 @@
             </div>
         </footer>
     </div>
+
     <script>
+        // Mobile menu toggle
         try {
             document.querySelector('.mobile-nav-toggler').addEventListener('click', function() {
                 document.body.classList.add('mobile-menu-visible');
@@ -134,6 +143,24 @@
                 document.body.classList.remove('mobile-menu-visible');
             });
         } catch(e) {}
+    </script>
+    <script src="/assets/portfolio-data.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    portfolioData: PORTFOLIO_DATA.items
+                }
+            },
+            methods: {
+                normalizeUrl(url) {
+                    if (!url || url === 'javascript:;') return '#';
+                    if (url.startsWith('http')) return url;
+                    return 'https://' + url;
+                }
+            }
+        }).mount('#app');
     </script>
 </body>
 </html>
