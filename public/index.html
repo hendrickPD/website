@@ -351,6 +351,43 @@
                 document.body.classList.remove('mobile-menu-visible');
             });
         } catch(e) {}
+
+        try {
+            var grid = document.querySelector('.testimonials-grid');
+            if (grid) {
+                var cards = Array.prototype.slice.call(grid.querySelectorAll('.testimonial-card'));
+                var nameOf = function(c) {
+                    var el = c.querySelector('.testimonial-name');
+                    return el ? el.textContent : '';
+                };
+                var fixedNames = ['Henry Ward', 'Ladi Delano', 'Sam Bhagwat'];
+                var fixed = {};
+                fixedNames.forEach(function(n) {
+                    fixed[n] = cards.find(function(c) { return nameOf(c) === n; });
+                });
+                var others = cards.filter(function(c) { return fixedNames.indexOf(nameOf(c)) === -1; });
+                for (var i = others.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var tmp = others[i]; others[i] = others[j]; others[j] = tmp;
+                }
+                var cols = [
+                    { cards: [fixed['Henry Ward']], height: fixed['Henry Ward'].offsetHeight },
+                    { cards: [fixed['Ladi Delano']], height: fixed['Ladi Delano'].offsetHeight },
+                    { cards: [fixed['Sam Bhagwat']], height: fixed['Sam Bhagwat'].offsetHeight }
+                ];
+                others.forEach(function(c) {
+                    var shortest = cols[0];
+                    for (var k = 1; k < cols.length; k++) {
+                        if (cols[k].height < shortest.height) shortest = cols[k];
+                    }
+                    shortest.cards.push(c);
+                    shortest.height += c.offsetHeight;
+                });
+                cols.forEach(function(col) {
+                    col.cards.forEach(function(c) { grid.appendChild(c); });
+                });
+            }
+        } catch(e) {}
     </script>
 </body>
 </html>
