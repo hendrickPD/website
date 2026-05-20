@@ -179,6 +179,10 @@
     columns: 2;
   }
 
+  .testimonials-grid .testimonial-card{
+    break-before: auto !important;
+  }
+
   .main-footer .logo-widget{
     margin-top: 0px;
     margin-bottom: 20px;
